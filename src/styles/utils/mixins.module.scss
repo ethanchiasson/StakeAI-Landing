@@ -1,0 +1,55 @@
+@mixin desktop(){
+    @media (max-width: 600px) {
+        @content;
+    }
+}
+
+
+@mixin laptop(){
+    @media (max-width: 1000px) {
+        @content;
+    }
+}
+
+@mixin mobile(){
+    @media (max-width: 630px) {
+        @content;
+    }
+}
+
+
+@mixin hamburger(){
+    @media (min-width: 680px) {
+        @content;
+    }
+}
+
+@mixin navLinks(){
+    @media (max-width: 680px) {
+        @content;
+    }
+}
+
+@mixin connectButton(){
+    @media (max-width: 680){
+        @content;
+    }
+}
+
+@mixin footer(){
+    @media (max-width: 900px){
+        @content;
+    }
+}
+
+@mixin flex(){
+    @media (max-width: 900px){
+        @content;
+    }
+}
+
+@mixin flex-bottom(){
+    @media (max-width: 720px){
+        @content;
+    }
+}

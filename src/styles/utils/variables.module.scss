@@ -1,0 +1,9 @@
+/* variables.module.scss */
+// $primary-color: #20FF94;
+$primary-color: #ffffff;
+$secondary-color: #000;
+$accent-color: rgb(181, 43, 255);
+
+:export {
+  primaryColor: $primary-color;
+}

@@ -1,0 +1,11 @@
+@import "./utils/variables.module.scss";
+@import "./utils/mixins.module.scss";
+
+
+.footer{
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+    color: grey;
+    font-size: 14px;
+}
