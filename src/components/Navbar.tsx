@@ -81,7 +81,7 @@ const Navbar = () => {
             </a>
           ))}
           <a href="https://app.stake.gg">
-            <button className={styles.join}>Join beta</button>
+            <button className={styles.join}>Primer</button>
           </a>
         </motion.div>
 
@@ -107,7 +107,7 @@ const Navbar = () => {
             </div>
           </a>
         ))}
-        <button className={styles.join}>Join beta</button>
+        <button className={styles.join}>Primer</button>
       </motion.div>
     </>
   );

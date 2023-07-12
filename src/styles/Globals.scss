@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Nunito+Sans&display=swap');
 
 
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: 'Inter', ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+  --font-mono: 'Nunito'.'Inter', ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace !important;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -49,9 +49,12 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --font-mono: 'Nunito'.'Inter', ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace !important;
 
-    // --primary-glow: radial-gradient(#20ff9356, #20ff931d);
-    --primary-glow: radial-gradient(#ffffff56, #20ff931d);
+
+    --primary-glow: radial-gradient(#20ff9356, #20ff931d);
     --secondary-glow: linear-gradient(
       to bottom right,
       (1, 65, 255, 0),
@@ -86,7 +89,8 @@
 
 html,
 body {
-  font-family: 'Inter';
+  // font-family: 'Inter';
+  font-family: 'Inter' !important;
   max-width: 100vw;
   overflow-x: hidden;
 }
