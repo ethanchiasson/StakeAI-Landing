@@ -8,6 +8,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
 
+  const saveEmail = () => {
+
+  }
+
   const ref = useRef(null);
 
   
@@ -41,13 +45,10 @@ export default function Home() {
             className={styles.top}
           >
             <div className={styles.card}>
-              {/* <h4 className={inter.className}>Get Early Access</h4>
+              <h4 className={inter.className}>Get Early Access</h4>
+              {/* <h4 className={inter.className}>Learn More</h4> */}
               <p className={inter.className}>
                 Be the one of the first to try Stake.
-              </p> */}
-                <h4 className={inter.className}>Learn More</h4>
-              <p className={inter.className}>
-                Discover we are building and how you can get involved.
               </p>
               <a href="https://discord.com" className={styles.connect}>
               Read Primer

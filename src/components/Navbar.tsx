@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FaTwitter } from "react-icons/fa";
 import { SiSubstack } from "react-icons/si";
 import { HiBars2 } from "react-icons/hi2";
+import { SiMedium } from "react-icons/si";
 import { RxCross2 } from "react-icons/rx";
 import { IconContext } from "react-icons";
 import React, { useState } from "react";
@@ -35,9 +36,9 @@ const links = [
     aniDelay: 2,
   },
   {
-    name: "Substack",
-    link: "https://google.com",
-    icon: <SiSubstack />,
+    name: "Blog",
+    link: "https://stakeai.medium.com",
+    icon: <SiMedium />,
     aniDelay: 1,
   },
 ];
