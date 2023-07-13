@@ -22,6 +22,20 @@ export default function Home() {
         <meta name="description" content="A.I. Powered Investing" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+
+  <meta property="og:url" content="https://stake.gg"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Stake"/>
+  <meta property="og:description" content="A.I. Powered Investing"/>
+  <meta property="og:image" content="og.png"/>
+
+
+  <meta name="twitter:card" content="og.png"/>
+  <meta property="twitter:domain" content="stake.gg"/>
+  <meta property="twitter:url" content="https://stake.gg"/>
+  <meta name="twitter:title" content="Stake"/>
+  <meta name="twitter:description" content="A.I. Powered Investing"/>
+  <meta name="twitter:image" content="og.png"/>
       </Head>
       <main className={styles.main}>
         <motion.div
