@@ -1,7 +1,6 @@
 import styles from "../styles/Navbar.module.scss";
 import Image from "next/image";
 import { FaTwitter } from "react-icons/fa";
-import { SiSubstack } from "react-icons/si";
 import { HiBars2 } from "react-icons/hi2";
 import { SiMedium } from "react-icons/si";
 import { RxCross2 } from "react-icons/rx";
@@ -56,24 +55,24 @@ const Navbar = () => {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
+        // initial={{ opacity: 0, y: -50 }}
+        // animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75, delay: 0.25 }}
         className={styles.navbar}
       >
         <motion.div
-          // initial={{ opacity: 0, x: 50 }}
-          // animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.75, delay: 0.25 }}
+          initial={{ opacity: 0, x: 0 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.75, delay: 0.5 }}
           className={styles.logo}
         >
-          <img src="/StakeLogo.png" alt="Stake Logo" width={32} height={32} />
-          {/* <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} /> */}
+          {/* <img src="/StakeLogo.png" alt="Stake Logo" width={32} height={32} /> */}
+          <Image src="/StakeLogo.png" alt="Stake Logo" width={32} height={32} />
         </motion.div>
         <motion.div
-          // initial={{ opacity: 0, x: 50 }}
-          // animate={{ opacity: 1, x: 0 }}
-          // transition={{ duration: 0.75, delay: 0.25 }}
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.75, delay: 0.25 }}
           className={styles.navigation}
         >
           {links.map(({ name, link, icon }) => (
@@ -81,12 +80,13 @@ const Navbar = () => {
               <div className={styles.icon}>{icon}</div>
             </a>
           ))}
-          <a href="https://app.stake.gg">
+          <a href="https://stakeai.medium.com">
             <button className={styles.join}>Primer</button>
           </a>
         </motion.div>
 
-        <IconContext.Provider value={{ className: styles.hamburger }}>
+        <IconContext.Provider
+         value={{ className: styles.hamburger }}>
           {hamburgerClicked ? (
             <RxCross2 onClick={toggleHamburger} onMouseEnter={hoverIcon} />
           ) : (
@@ -108,7 +108,9 @@ const Navbar = () => {
             </div>
           </a>
         ))}
-        <button className={styles.join}>Primer</button>
+       <a href="https://stakeai.medium.com">
+            <button className={styles.join}>Primer</button>
+          </a>
       </motion.div>
     </>
   );

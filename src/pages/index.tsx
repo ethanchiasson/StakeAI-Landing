@@ -2,22 +2,17 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.scss";
 import { motion } from "framer-motion";
-import { useRef } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const saveEmail = () => {};
-
-  const ref = useRef(null);
-
   return (
     <>
       <Head>
-        <title>Stake.gg</title>
+        <title>Stake</title>
         <meta name="description" content="A.I. Powered Investing" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
 
         <meta property="og:url" content="https://stake.gg" />
         <meta property="og:type" content="website" />
@@ -51,12 +46,12 @@ export default function Home() {
             className={styles.top}
           >
             <div className={styles.card}>
-              <h4 className={inter.className}>Get Early Access</h4>
+              <h4 className={inter.className}>Learn more</h4>
               {/* <h4 className={inter.className}>Learn More</h4> */}
               <p className={inter.className}>
-                Be the one of the first to try Stake.
+                Discover how we aim to change the way we invest.
               </p>
-              <a href="https://discord.com" className={styles.connect}>
+              <a href="https://stakeai.medium.com" className={styles.connect}>
                 Read Primer
               </a>
             </div>
