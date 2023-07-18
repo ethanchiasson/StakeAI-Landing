@@ -51,7 +51,7 @@ export default function Home() {
               <p className={inter.className}>
                 Learn how Stake aims to change the way people invest.
               </p>
-              <a href="https://stakeai.medium.com" className={styles.connect}>
+              <a href="https://tally.so/r/3qaxDd" className={styles.connect}>
                 Request a demo
               </a>
             </div>
