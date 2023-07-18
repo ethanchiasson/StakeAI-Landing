@@ -10,28 +10,22 @@ export default function Home() {
     <>
       <Head>
         <title>Stake</title>
-        <meta name="description" content="A.I. Powered Investing" />
+        <meta name="description" content="A.I. Investing Sidekick" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/star.png" />
 
         <meta property="og:url" content="https://stake.gg" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Stake" />
-        <meta
-          property="og:description"
-          content="A.I. Powered Investing Agents."
-        />
+        <meta property="og:description" content="A.I. Investing Sidekick." />
         <meta property="og:image" content="/OGImage.png" />
 
-        <meta name="twitter:card" content="/og.png" />
+        <meta name="twitter:card" content="/OGImage.png" />
         <meta property="twitter:domain" content="stake.gg" />
         <meta property="twitter:url" content="https://stake.gg" />
         <meta name="twitter:title" content="Stake" />
-        <meta
-          name="twitter:description"
-          content="A.I. Powered Investing Agents."
-        />
-        <meta name="twitter:image" content="/og.png" />
+        <meta name="twitter:description" content="A.I. Investing Sidekick" />
+        <meta name="twitter:image" content="/OGImage.png" />
       </Head>
       <main className={styles.main}>
         <motion.div
