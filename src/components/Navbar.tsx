@@ -67,7 +67,13 @@ const Navbar = () => {
           className={styles.logo}
         >
           {/* <img src="/StakeLogo.png" alt="Stake Logo" width={32} height={32} /> */}
-          <Image src="/StakeLogo.png" alt="Stake Logo" width={32} height={32} />
+          <Image
+            src="/StarStakeLogo.png"
+            alt="Stake Logo"
+            width={80}
+            height={26}
+          />
+          {/* <p>Stake</p> */}
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 50 }}
@@ -85,8 +91,7 @@ const Navbar = () => {
           </a>
         </motion.div>
 
-        <IconContext.Provider
-         value={{ className: styles.hamburger }}>
+        <IconContext.Provider value={{ className: styles.hamburger }}>
           {hamburgerClicked ? (
             <RxCross2 onClick={toggleHamburger} onMouseEnter={hoverIcon} />
           ) : (
@@ -108,9 +113,9 @@ const Navbar = () => {
             </div>
           </a>
         ))}
-       <a href="https://stakeai.medium.com">
-            <button className={styles.join}>Primer</button>
-          </a>
+        <a href="https://stakeai.medium.com">
+          <button className={styles.join}>Primer</button>
+        </a>
       </motion.div>
     </>
   );

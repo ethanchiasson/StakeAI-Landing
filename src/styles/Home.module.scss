@@ -12,12 +12,15 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+
+
 .keyword{
   color: $accent-color;
 }
 
 
 .testGrid {
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -72,7 +75,6 @@
     transition: all 0.5s ease-in;
           background-image: linear-gradient(to left, rgb(218, 218, 218), #d7d7d7, #ffffff, $primary-color);
           color: black;
-          font-weight: bold;
           // border-color: $primary-color;
         }
       }

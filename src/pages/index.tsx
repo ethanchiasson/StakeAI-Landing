@@ -12,19 +12,25 @@ export default function Home() {
         <title>Stake</title>
         <meta name="description" content="A.I. Powered Investing" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/star.png" />
 
         <meta property="og:url" content="https://stake.gg" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Stake" />
-        <meta property="og:description" content="A.I. Powered Investing" />
-        <meta property="og:image" content="/og.png" />
+        <meta
+          property="og:description"
+          content="A.I. Powered Investing Agents."
+        />
+        <meta property="og:image" content="/OGImage.png" />
 
         <meta name="twitter:card" content="/og.png" />
         <meta property="twitter:domain" content="stake.gg" />
         <meta property="twitter:url" content="https://stake.gg" />
         <meta name="twitter:title" content="Stake" />
-        <meta name="twitter:description" content="A.I. Powered Investing" />
+        <meta
+          name="twitter:description"
+          content="A.I. Powered Investing Agents."
+        />
         <meta name="twitter:image" content="/og.png" />
       </Head>
       <main className={styles.main}>
@@ -35,7 +41,7 @@ export default function Home() {
           className={styles.center}
         >
           {/* <span className={styles.keyword}>AI</span> */}
-          <h1>Making investing simple with A.I.</h1>
+          <h1>Your Personal A.I. Investing Agent.</h1>
         </motion.div>
 
         <div className={styles.testGrid}>
@@ -46,13 +52,13 @@ export default function Home() {
             className={styles.top}
           >
             <div className={styles.card}>
-              <h4 className={inter.className}>Learn more</h4>
+              <h4 className={inter.className}>✦ Get Early Access</h4>
               {/* <h4 className={inter.className}>Learn More</h4> */}
               <p className={inter.className}>
-                Discover how we aim to change the way we invest.
+                Learn how Stake aims to change the way people invest.
               </p>
               <a href="https://stakeai.medium.com" className={styles.connect}>
-                Read Primer
+                Request a demo
               </a>
             </div>
           </motion.div>
