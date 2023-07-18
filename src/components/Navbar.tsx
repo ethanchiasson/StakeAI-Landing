@@ -63,20 +63,18 @@ const Navbar = () => {
         <motion.div
           initial={{ opacity: 0, x: 0 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.75, delay: 0.5 }}
+          transition={{ duration: 0.75, delay: 0.25 }}
           className={styles.logo}
         >
-          {/* <img src="/StakeLogo.png" alt="Stake Logo" width={32} height={32} /> */}
           <Image
             src="/StarStakeLogo.png"
             alt="Stake Logo"
             width={80}
             height={26}
           />
-          {/* <p>Stake</p> */}
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: 0 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.75, delay: 0.25 }}
           className={styles.navigation}

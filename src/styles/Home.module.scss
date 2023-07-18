@@ -8,19 +8,32 @@
   align-items: center;
   padding: 1em;
   min-height: 100vh;
-  font-family: 'Inter',system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-
-
-.keyword{
+.keyword {
   color: $accent-color;
 }
 
+.title {
+  font-weight: 600;
+  font-size: 64px;
+  background: rgb(255, 255, 255);
+  background-image: linear-gradient(
+    90deg,
+    rgb(255, 255, 255) 70%,
+    rgb(130, 130, 130) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @include flex() {
+    font-size: 44px;
+  }
+}
 
 .testGrid {
-  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -47,7 +60,7 @@
         font-size: 16px;
         margin-top: 0.75em;
       }
-      
+
       .connect {
         display: flex;
         flex-direction: row;
@@ -63,35 +76,29 @@
         background: rgba(52, 52, 52, 0.23);
         border: 1px solid #3a3a3a;
         border-radius: 10px;
-        
-        .icon{
+
+        .icon {
           margin-right: 0.5em;
         }
         &:hover {
-           background-position: 100% 0;
-    moz-transition: all 0.5s ease-in;
-    -o-transition: all 0.5s ease-in;
-    -webkit-transition: all 0.5s ease-in;
-    transition: all 0.5s ease-in;
-          background-image: linear-gradient(to left, rgb(218, 218, 218), #d7d7d7, #ffffff, $primary-color);
+          background-position: 100% 0;
+          moz-transition: all 0.5s ease-in;
+          -o-transition: all 0.5s ease-in;
+          -webkit-transition: all 0.5s ease-in;
+          transition: all 0.5s ease-in;
+          background-image: linear-gradient(
+            to left,
+            rgb(218, 218, 218),
+            #d7d7d7,
+            #ffffff,
+            $primary-color
+          );
           color: black;
           // border-color: $primary-color;
         }
       }
     }
   }
-
-  // .bottom {
-  //   display: grid;
-  //   grid-template-columns: repeat(2, minmax(25%, auto));
-  //   grid-gap: 1em;
-
-  //   @include flex-bottom() {
-  //     grid-template-columns: repeat(1, minmax(25%, auto));
-  //   }
-  //   // width: var(--max-width);
-  //   max-width: 100%;
-  // }
 
   .bottom {
     display: grid;
@@ -118,7 +125,6 @@
   width: 100%;
 }
 
-
 .card span {
   display: inline-block;
   transition: transform 200ms;
@@ -143,7 +149,7 @@
   display: flex;
   text-align: center;
   padding: 1em;
-  font-size: 20px;
+  // font-size: 20px;
   max-width: 720px;
   margin: 1em 0em 1em 0em;
 }
@@ -184,8 +190,6 @@
     transform: translateX(4px);
   }
 }
-
-
 
 @media (prefers-reduced-motion) {
   .thirteen::before {

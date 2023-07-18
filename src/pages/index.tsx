@@ -35,24 +35,24 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <motion.div
-          initial={{ opacity: 0, y: -50 }}
+          initial={{ opacity: 0, y: -11 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
           className={styles.center}
         >
           {/* <span className={styles.keyword}>AI</span> */}
-          <h1>Your Personal A.I. Investing Agent.</h1>
+          <h1 className={styles.title}>Your A.I. investing sidekick.</h1>
         </motion.div>
 
         <div className={styles.testGrid}>
           <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.75 }}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.25, delay: 0.75 }}
             className={styles.top}
           >
             <div className={styles.card}>
-              <h4 className={inter.className}>✦ Get Early Access</h4>
+              <h4 className={inter.className}>✦ Get early access</h4>
               {/* <h4 className={inter.className}>Learn More</h4> */}
               <p className={inter.className}>
                 Learn how Stake aims to change the way people invest.
