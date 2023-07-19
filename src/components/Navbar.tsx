@@ -84,9 +84,9 @@ const Navbar = () => {
               <div className={styles.icon}>{icon}</div>
             </a>
           ))}
-          <a href="https://stakeai.medium.com">
+          {/* <a href="https://stakeai.medium.com">
             <button className={styles.join}>Primer</button>
-          </a>
+          </a> */}
         </motion.div>
 
         <IconContext.Provider value={{ className: styles.hamburger }}>
@@ -111,9 +111,9 @@ const Navbar = () => {
             </div>
           </a>
         ))}
-        <a href="https://stakeai.medium.com">
-          <button className={styles.join}>Primer</button>
-        </a>
+        {/* <a href="https://stakeai.medium.com">
+          <button className={styles.join}>Soon</button>
+        </a> */}
       </motion.div>
     </>
   );

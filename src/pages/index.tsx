@@ -28,6 +28,19 @@ export default function Home() {
         <meta name="twitter:image" content="/OGImage.png" />
       </Head>
       <main className={styles.main}>
+      <motion.div
+                initial={{ opacity: 0,y: -11}}
+                animate={{ opacity: 1,y: 0}}
+                transition={{ duration: 1, delay: 0.5 }} className={styles.description}>
+        
+            <p className={styles.thirteen}>
+              <a href="https://stakeai.medium.com">
+              Read our primer&nbsp;
+              <code className={inter.className}>{"->"}</code>
+              </a>
+            </p>
+    
+        </motion.div>
         <motion.div
           initial={{ opacity: 0, y: -11 }}
           animate={{ opacity: 1, y: 0 }}
@@ -35,7 +48,7 @@ export default function Home() {
           className={styles.center}
         >
           {/* <span className={styles.keyword}>AI</span> */}
-          <h1 className={styles.title}>Your A.I. investing sidekick.</h1>
+          <h1 className={styles.title}>Your Personal A.I. Investing Sidekick.</h1>
         </motion.div>
 
         <div className={styles.testGrid}>
