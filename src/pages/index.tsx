@@ -34,8 +34,8 @@ export default function Home() {
                 transition={{ duration: 1, delay: 0.5 }} className={styles.description}>
         
             <p className={styles.thirteen}>
-              <a href="https://stakeai.medium.com">
-              Read our primer&nbsp;
+              <a href="https://twitter.com/stakegg">
+              Learn More&nbsp;
               <code className={inter.className}>{"->"}</code>
               </a>
             </p>
@@ -62,10 +62,10 @@ export default function Home() {
               <h4 className={inter.className}>✦ Get early access</h4>
               {/* <h4 className={inter.className}>Learn More</h4> */}
               <p className={inter.className}>
-                Learn how Stake aims to change the way people invest.
+                See how Stake can help you invest better.
               </p>
               <a href="https://tally.so/r/3qaxDd" className={styles.connect}>
-                Request a demo
+                Join Beta
               </a>
             </div>
           </motion.div>
