@@ -8,7 +8,7 @@ const DiscordRedirect = () => {
     // Redirect to your Discord link after a short delay (e.g., 2 seconds)
     const redirectTimer = setTimeout(() => {
       router.push('https://discord.gg/2WDHDnbQvx');
-    }, 2000);
+    }, 1000);
 
     // Clean up the timer when the component unmounts
     return () => clearTimeout(redirectTimer);
@@ -16,7 +16,7 @@ const DiscordRedirect = () => {
 
   return (
     <div>
-      {/* <p>Redirecting to Discord...</p> */}
+      <p>Redirecting to Discord...</p>
       {/* You can add a loading message or spinner here if you want */}
     </div>
   );
