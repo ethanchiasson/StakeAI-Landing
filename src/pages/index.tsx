@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Stake</title>
+        <title>Stake AI</title>
         <meta name="description" content="A.I. Investing Sidekick" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/star.png" />
@@ -17,7 +17,7 @@ export default function Home() {
         <meta property="og:url" content="https://stake.gg" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Stake" />
-        <meta property="og:description" content="A.I. Investing Sidekick." />
+        <meta property="og:description" content="A.I. Investing agents." />
         <meta property="og:image" content="/OGImage.png" />
 
         <meta name="twitter:card" content="/OGImage.png" />
@@ -64,7 +64,7 @@ export default function Home() {
               <p className={inter.className}>
                 See how Stake can help you invest better.
               </p>
-              <a href="https://tally.so/r/3qaxDd" className={styles.connect}>
+              <a href="https://discord.gg/xYv46n5Y" className={styles.connect}>
                 Join Beta
               </a>
             </div>
